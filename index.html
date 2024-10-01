@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD3 - FIREBASE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+</body>
+
+    <!-- SDK DO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script> 
+
+    <!-- SDK DO FIRESTORE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script> 
+
+    <!-- CONEXÃO COM O FIRESTORE -->
+    <script>
+
+    /* CONEXÃO COM O FIRESTORE */
+    const firebaseConfig = {
+        apiKey: "AIzaSyDXGPLHeuHm1qbykC5miSztfURWE1dkz8Y",
+        authDomain: "bd3-app-libri-gabriel.firebaseapp.com",
+        projectId: "bd3-app-libri-gabriel",
+        storageBucket: "bd3-app-libri-gabriel.appspot.com",
+        messagingSenderId: "634250991718",
+        appId: "1:634250991718:web:b6668d0ac459dbec7275a7",
+        measurementId: "G-8RDZ52G6CT"
+        };
+
+        /* INICIALIZA O FIREBASE */
+        firebase.initializeApp(firebaseConfig);
+
+        /* INICIALIZA O FIRESTORE */
+        const db = firebase.firestore();
+        console.log(db);
+
+    </script>
+
+    <!-- IMPORTAÇÃO DO ARQUIVO app.js -->
+    <script src="app.js"></script>
+
+</html>
